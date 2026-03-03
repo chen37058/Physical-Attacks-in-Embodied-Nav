@@ -2,6 +2,8 @@
 
 [arXiv Paper](https://arxiv.org/abs/2409.10071) 
 
+[IEEE Paper](https://ieeexplore.ieee.org/abstract/document/11246438)
+
 ## Abstract
 The significant advancements in embodied vision navigation have raised concerns about its susceptibility to adversarial attacks exploiting deep neural networks. Investigating the adversarial robustness of embodied vision navigation is crucial, especially given the threat of 3D physical attacks that could pose risks to human safety. However, existing attack methods for embodied vision navigation often lack physical feasibility due to challenges in transferring digital perturbations into the physical world. Moreover, current physical attacks for object detection struggle to achieve both multi-view effectiveness and visual naturalness in navigation scenarios. To address this, we propose a practical attack method for embodied navigation by attaching adversarial patches to objects, where both opacity and textures are learnable. Specifically, to ensure effectiveness across varying viewpoints, we employ a multi-view optimization strategy based on object-aware sampling, which optimizes the patch's texture based on feedback from the vision-based perception model used in navigation. To make the patch inconspicuous to human observers, we introduce a two-stage opacity optimization mechanism, in which opacity is fine-tuned after texture optimization. Experimental results demonstrate that our adversarial patches decrease the navigation success rate by an average of 22.39%, outperforming previous methods in practicality, effectiveness, and naturalness.
 
@@ -180,12 +182,16 @@ for radius in radius_list:
 ## Citation
 Please cite our paper if you find this repo useful!
 ```bibtex
-@article{chen2024towards,
-  title={Towards Physically-Realizable Adversarial Attacks in Embodied Vision Navigation},
+@INPROCEEDINGS{11246438,
   author={Chen, Meng and Tu, Jiawei and Qi, Chao and Dang, Yonghao and Zhou, Feng and Wei, Wei and Yin, Jianqin},
-  journal={arXiv preprint arXiv:2409.10071},
-  year={2024}
-}
+  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Towards Physically Realizable Adversarial Attacks in Embodied Vision Navigation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={11819-11825},
+  keywords={Visualization;Navigation;Perturbation methods;Object detection;Observers;Three-dimensional printing;Rendering (computer graphics);Robustness;Safety;Optimization},
+  doi={10.1109/IROS60139.2025.11246438}}
 ```
 
 ## Acknowledgments
